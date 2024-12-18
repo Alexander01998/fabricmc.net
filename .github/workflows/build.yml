@@ -21,6 +21,8 @@ jobs:
       - uses: denoland/setup-deno@v1
         with:
           deno-version: "1.34.0"
+      # I can't run this locally right now, just want to see if it would work
+      - run: bundle install
       # Jekyll 4 fails to create the .jekyll-cache directory, but if we pre-create it, it works
       - run: mkdir -p .jekyll-cache
       - run: bundler install --deployment && bundler exec jekyll build
