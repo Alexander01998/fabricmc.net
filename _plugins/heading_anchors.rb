@@ -11,7 +11,6 @@ module Jekyll
     private
 
     def process_content(item)
-      return unless item.output?
       return if item.output.nil?
 
       doc = Nokogiri::HTML::DocumentFragment.parse(item.output)
