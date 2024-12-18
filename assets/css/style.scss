@@ -1,0 +1,26 @@
+/* Heading anchor styles */
+h1, h2, h3, h4, h5, h6 {
+  position: relative;
+}
+
+.heading-anchor {
+  position: absolute;
+  left: -1.5em;
+  top: 50%;
+  transform: translateY(-50%);
+  text-decoration: none;
+  opacity: 0;
+  padding: 0 0.5em;
+  font-size: 0.8em;
+  transition: opacity 0.2s ease-in-out;
+}
+
+h1:hover .heading-anchor,
+h2:hover .heading-anchor,
+h3:hover .heading-anchor,
+h4:hover .heading-anchor,
+h5:hover .heading-anchor,
+h6:hover .heading-anchor,
+.heading-anchor:hover {
+  opacity: 1;
+} 
